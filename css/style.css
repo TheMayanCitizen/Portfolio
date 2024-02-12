@@ -82,6 +82,8 @@ section {
 }
 
 .home-img img {
+  border: 5px solid var(--second-bg-color);
+  border-radius: 50%;
   width: 35vw;
   animation: floatImage 4s ease-in-out infinite;
 }
@@ -167,6 +169,8 @@ span {
 }
 
 .about-img img {
+  border: 5px solid var(--bg-color);
+  border-radius: 20px;
   width: 35vw;
 }
 
