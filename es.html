@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Personal Portfolio</title>
+
+    <!-- box icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- header design -->
+    <header class="header">
+      <a href="#" class="logo">{Cool Code}</a>
+      <div class="header__theme">
+        <i class="bx bxs-sun bx-tada" id="sun"></i>
+        <i class="bx bxs-moon bx-tada" id="moon"></i>
+        <input type="checkbox" class="header__check" />
+      </div>
+
+      <div class="header__language" title="English">
+        <img src="./imgs/mx.svg" id="mx" />
+        <img src="./imgs/us.svg" id="us" />
+        <input type="checkbox" id="lang-switch" checked />
+      </div>
+      <i class="bx bx-menu" id="menu-icon"></i>
+
+      <nav class="navbar">
+        <a href="#home" class="active">Inicio</a>
+        <a href="#about">Acerca</a>
+        <a href="#services">Habilidades</a>
+        <a href="#portfolio">Proyectos</a>
+        <a href="#contact">Contacto</a>
+      </nav>
+    </header>
+
+    <!-- home section design -->
+    <section class="home" id="home">
+      <div class="home-content">
+        <h3>Hola, mi nombre es</h3>
+        <h1>Alejandro Aguilar</h1>
+        <h3>Soy un <span class="multiple-text"></span></h3>
+        <p>Ingeniero Mecatrónico & Desarrollador Web</p>
+        <div class="social-media">
+          <a href="https://github.com/TheMayanCitizen" target="_blank"
+            ><i class="bx bxl-github"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/alejandro-aguilar-4ab03b261/"
+            target="_blank"
+            ><i class="bx bxl-linkedin"></i
+          ></a>
+        </div>
+        <a href="./imgs/CV Alejandro Aguilar.pdf" download="" class="btn"
+          >Descargar CV</a
+        >
+      </div>
+      <div class="home-img">
+        <img src="./imgs/kid-coder.jpg" alt="" />
+      </div>
+    </section>
+
+    <!-- about section design -->
+    <section class="about" id="about">
+      <div class="about-img">
+        <img src="./imgs/adult-coder.jpg" alt="" />
+      </div>
+
+      <div class="about-content">
+        <h2 class="heading">Acerca de <span>Mi</span></h2>
+        <h3>Desarrollador Web Full Stack!</h3>
+        <p>
+          Desarrollador Full Stack con formación en ingeniería. Siempre buscando
+          oportunidades para expandir mi conjunto de habilidades. Jugador de
+          equipo proactivo, siempre dispuesto a ayudar y colaborar con otros
+          para alcanzar el éxito. Algunas de las tecnologías que utilizo son:
+          JavaScript, Python, React, Node.js, HTML, CSS, Redux, Git.
+        </p>
+        <a href="#" class="btn"> Descargar CV</a>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <h2 class="heading">Mis <span>Habilidades</span></h2>
+
+      <div class="services-container">
+        <div class="services-box">
+          <i class="bx bxl-html5"></i>
+          <h3>HTML</h3>
+          <!-- <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
+            aliquam neque asperiores inventore enim perferendis eveniet
+            architecto repellendus illum recusandae soluta iusto impedit, fugit
+            voluptatem! Pariatur, quod! Eius, ipsam eligendi!
+          </p>
+          <a href="#" class="btn">Read More</a> -->
+        </div>
+
+        <div class="services-box">
+          <i class="bx bxl-css3"></i>
+          <h3>CSS</h3>
+          <!-- <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
+            aliquam neque asperiores inventore enim perferendis eveniet
+            architecto repellendus illum recusandae soluta iusto impedit, fugit
+            voluptatem! Pariatur, quod! Eius, ipsam eligendi!
+          </p>
+          <a href="#" class="btn">Read More</a> -->
+        </div>
+
+        <div class="services-box">
+          <i class="bx bxl-javascript"></i>
+          <h3>JavaScript</h3>
+          <!-- <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
+            aliquam neque asperiores inventore enim perferendis eveniet
+            architecto repellendus illum recusandae soluta iusto impedit, fugit
+            voluptatem! Pariatur, quod! Eius, ipsam eligendi!
+          </p>
+          <a href="#" class="btn">Read More</a> -->
+        </div>
+        <div class="services-box">
+          <i class="bx bxl-react"></i>
+          <h3>React</h3>
+        </div>
+        <div class="services-box">
+          <i class="bx bxl-nodejs"></i>
+          <h3>NodeJs</h3>
+        </div>
+        <div class="services-box">
+          <i class="bx bxl-git"></i>
+          <h3>Git</h3>
+        </div>
+        <div class="services-box">
+          <i class="bx bxl-github"></i>
+          <h3>Github</h3>
+        </div>
+        <div class="services-box">
+          <i class="bx bxl-postgresql"></i>
+          <h3>PostgreSQL</h3>
+        </div>
+        <div class="services-box">
+          <i class="bx bxl-typescript"></i>
+          <h3>Typescript</h3>
+        </div>
+        <div class="services-box">
+          <i class="bx bxl-tailwind-css"></i>
+          <h3>Tailwindcss</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- portfolio section desing -->
+    <section class="portfolio" id="portfolio">
+      <h2 class="heading">Ultimos <span>Proyectos</span></h2>
+
+      <div class="portfolio-container">
+        <div class="portfolio-box">
+          <img src="./imgs/html.svg" alt="" />
+          <div class="portfolio-layer">
+            <h4>HTML</h4>
+            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
+            <a href="#" target="_blank"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+
+        <div class="portfolio-box">
+          <img src="./imgs/github.svg" alt="" />
+          <div class="portfolio-layer">
+            <h4>Github</h4>
+            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
+            <a href="#" target="_blank"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+
+        <div class="portfolio-box">
+          <img src="./imgs/javascript.svg" alt="" />
+          <div class="portfolio-layer">
+            <h4>JavaScript</h4>
+            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
+            <a href="#"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+
+        <!-- <div class="portfolio-box">
+          <img src="./imgs/react.svg" alt="" />
+          <div class="portfolio-layer">
+            <h4>React</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> 
+            <a href="#" target="_blank"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div> -->
+
+        <!-- <div class="portfolio-box">
+          <img src="./imgs/html.svg" alt="" />
+          <div class="portfolio-layer">
+            <h4>HTML</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <a href="#"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+
+        <div class="portfolio-box">
+          <img src="./imgs/html.svg" alt="" />
+          <div class="portfolio-layer">
+            <h4>HTML</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <a href="#"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div> -->
+      </div>
+    </section>
+
+    <!-- contact section desing -->
+    <section class="contact" id="contact">
+      <h2 class="heading">Contacta <span>Conmigo!</span></h2>
+
+      <form action="https://formspree.io/f/xpzeldnl" method="POST">
+        <div class="input-box">
+          <input type="text" placeholder="Nombre Completo" />
+          <input type="email" placeholder="Email" />
+        </div>
+        <div class="input-box">
+          <input type="number" placeholder="Telefono" />
+          <input type="text" placeholder="Asunto" />
+        </div>
+        <textarea
+          name=""
+          id=""
+          cols="30"
+          rows="10"
+          placeholder="Tu mensaje"
+        ></textarea>
+        <input type="submit" value="Enviar" class="btn" />
+      </form>
+    </section>
+
+    <!-- footer design -->
+    <footer class="footer">
+      <div class="footer-text">
+        <p>Hecho con base de HTML, CSS & JavaScript con 💙</p>
+      </div>
+
+      <div class="footer-iconTop">
+        <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+      </div>
+    </footer>
+
+    <!-- Scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- typed js -->
+    <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+
+    <!-- custom js -->
+    <script src="./js/script.js"></script>
+  </body>
+</html>
