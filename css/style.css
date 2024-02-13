@@ -486,6 +486,9 @@ span {
 }
 
 @media (max-width: 768px) {
+  .header {
+    justify-content: space-evenly;
+  }
   #menu-icon {
     display: block;
   }
