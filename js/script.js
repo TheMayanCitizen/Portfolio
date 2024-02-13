@@ -7,6 +7,34 @@ menuIcon.onclick = () => {
   navbar.classList.toggle("active");
 };
 
+/* TOGGLE LIGHT MODE*/
+document.addEventListener("DOMContentLoaded", () => {
+  const switcherTheme = document.querySelector(".header__check");
+  const root = document.documentElement;
+
+  if (root.getAttribute("data-theme") === "dark") {
+    switcherTheme.checked = true;
+  }
+  switcherTheme.addEventListener("click", toggleTheme);
+
+  function toggleTheme() {
+    const setTheme = switcherTheme.checked ? "dark" : "light";
+    root.setAttribute("data-theme", setTheme);
+    localStorage.setItem("theme", setTheme);
+  }
+});
+
+/* READING THEME FROM LOCAL STORAGE AND SYSTEM COLOR SCHEME */
+
+const storageTheme = localStorage.getItem("theme");
+const systemColorScheme = window.matchMedia("(prefers-color-scheme: dark)")
+  .matches
+  ? "dark"
+  : "light";
+
+const newTheme = storageTheme ?? systemColorScheme;
+document.documentElement.setAttribute("data-theme", newTheme);
+
 /* SCROLL SECTION ACTIVE LINK */
 let sections = document.querySelectorAll("section");
 let navLinks = document.querySelectorAll("header nav a");

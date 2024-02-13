@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -18,15 +18,19 @@
   <body>
     <!-- header design -->
     <header class="header">
-      <a href="#" class="logo">{Cool Programmer}</a>
-
+      <a href="#" class="logo">{Cool Code}</a>
+      <div class="header__theme">
+        <i class="bx bxs-sun bx-tada" id="sun"></i>
+        <i class="bx bxs-moon bx-tada" id="moon"></i>
+        <input type="checkbox" class="header__check" />
+      </div>
       <i class="bx bx-menu" id="menu-icon"></i>
 
       <nav class="navbar">
         <a href="#home" class="active">Home</a>
         <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#portfolio">Portfolio</a>
+        <a href="#services">Skills</a>
+        <a href="#portfolio">Projects</a>
         <a href="#contact">Contact</a>
       </nav>
     </header>
