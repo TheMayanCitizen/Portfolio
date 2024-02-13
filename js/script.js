@@ -35,6 +35,19 @@ const systemColorScheme = window.matchMedia("(prefers-color-scheme: dark)")
 const newTheme = storageTheme ?? systemColorScheme;
 document.documentElement.setAttribute("data-theme", newTheme);
 
+/* CHANGE LANGUAGE */
+const langSwitch = document.querySelector("#lang-switch");
+langSwitch.addEventListener("click", changeLanguage);
+
+function changeLanguage() {
+  const setLanguage = langSwitch.checked;
+  if (setLanguage === true) {
+    location.href = "../es.html";
+  } else {
+    location.href = "../index.html";
+  }
+}
+
 /* SCROLL SECTION ACTIVE LINK */
 let sections = document.querySelectorAll("section");
 let navLinks = document.querySelectorAll("header nav a");

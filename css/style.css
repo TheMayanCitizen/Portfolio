@@ -29,6 +29,15 @@
   --show-moon: block;
 }
 
+:root[lang="es"] {
+  --show-mx: none;
+  --show-us: block;
+}
+:root[lang="en"] {
+  --show-mx: block;
+  --show-us: none;
+}
+
 html {
   font-size: 62.5%;
   overflow-x: hidden;
@@ -71,8 +80,13 @@ section {
 .header__theme {
   position: relative;
 }
+.header__language {
+  width: 30px;
+  position: relative;
+}
 
-.header__check {
+.header__check,
+#lang-switch {
   position: absolute;
   top: 0;
   left: 0;
@@ -83,10 +97,22 @@ section {
   opacity: 0;
 }
 
+#mx,
+#us {
+  display: block;
+  /* width: 30px; */
+}
+
+#mx {
+  display: var(--show-mx);
+}
+#us {
+  display: var(--show-us);
+}
+
 #sun,
 #moon {
   font-size: 25px;
-  cursor: pointer;
 }
 #sun {
   display: var(--show-sun);
